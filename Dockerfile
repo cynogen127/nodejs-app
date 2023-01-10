@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:alpine
 
 
 WORKDIR /app
@@ -9,6 +9,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 3000
 CMD [ "node", "index.js" ]
 
